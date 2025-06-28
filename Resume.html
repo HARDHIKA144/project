@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #222;
+      padding: 15px 30px;
+    }
+
+    .navbar h1 {
+      color: #ff9800;
+      margin: 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #ff9800;
+    }
+
+    /* Resume Section */
+    .resume {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .resume h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .resume p.subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 50px;
+    }
+
+    .resume-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .resume-item {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .resume-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+
+    .resume-item h3 {
+      color: #ff9800;
+      font-size: 18px;
+      margin: 0 0 10px 0;
+    }
+
+    .resume-item h4 {
+      font-size: 20px;
+      margin: 0 0 5px 0;
+      color: #fff;
+    }
+
+    .resume-item h5 {
+      color: #bbb;
+      margin: 0 0 10px 0;
+      font-weight: normal;
+    }
+
+    .resume-item p {
+      color: #ccc;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>MyPortfolio</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Resume Section -->
+  <section class="resume">
+    <h2>Resume</h2>
+    <p class="subtitle">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+
+    <div class="resume-grid">
+      <div class="resume-item">
+        <h3>2014–2015</h3>
+        <h4>Master Degree of Design</h4>
+        <h5>Cambridge University</h5>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+
+      <div class="resume-item">
+        <h3>2014–2015</h3>
+        <h4>Art & Creative Director</h4>
+        <h5>Cambridge University</h5>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+
+      <div class="resume-item">
+        <h3>2014–2015</h3>
+        <h4>Bachelor’s Degree of C.A</h4>
+        <h5>Cambridge University</h5>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+
+      <div class="resume-item">
+        <h3>2014–2015</h3>
+        <h4>WordPress Developer</h4>
+        <h5>Cambridge University</h5>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+
+      <div class="resume-item">
+        <h3>2014–2015</h3>
+        <h4>Diploma in Computer</h4>
+        <h5>Cambridge University</h5>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+
+      <div class="resume-item">
+        <h3>2017–2018</h3>
+        <h4>UI/UX Designer</h4>
+        <h5>Cambridge University</h5>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

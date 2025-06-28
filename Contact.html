@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #111;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    .contact-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact-section h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      color: #aaa;
+      max-width: 600px;
+      margin: 0 auto 50px;
+      font-size: 14px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .contact-info div {
+      text-align: center;
+    }
+
+    .contact-info h3 {
+      margin: 10px 0 5px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      padding: 0 50px;
+      margin-bottom: 50px;
+    }
+
+    .contact-image img {
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    .contact-form {
+      background: #111;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background: #f39c12;
+      border: none;
+      padding: 12px 25px;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 50px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      font-size: 14px;
+    }
+
+    footer h3 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      color: #f39c12;
+    }
+
+    footer .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Clark</div>
+    <ul>
+ <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-section">
+    <h1>Contact Me</h1>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+
+    <div class="contact-info">
+      <div>
+        <h3>📍 Address</h3>
+        <p>198 West 21th Street, New York NY 10016</p>
+      </div>
+      <div>
+        <h3>📞 Phone</h3>
+        <p>+1235 2355 98</p>
+      </div>
+      <div>
+        <h3>✉ Email</h3>
+        <p>info@yoursite.com</p>
+      </div>
+      <div>
+        <h3>🌐 Website</h3>
+        <p>yoursite.com</p>
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-image">
+        <img src="https://via.placeholder.com/300x400?text=Your+Photo" alt="Your Photo">
+      </div>
+      <div class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Subject">
+        <textarea rows="5" placeholder="Message"></textarea>
+        <button>Send Message</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <h3>About</h3>
+      <p>Far far away, behind the word mountains, there live the blind texts.</p>
+      <div class="social-icons">
+        <a href="#">🔵</a>
+        <a href="#">🟣</a>
+        <a href="#">🟠</a>
+      </div>
+    </div>
+
+    <div>
+      <h3>Links</h3>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div>
+      <h3>Services</h3>
+      <a href="#">Web Design</a>
+      <a href="#">Web Development</a>
+      <a href="#">Business Strategy</a>
+      <a href="#">Graphic Design</a>
+    </div>
+
+    <div>
+      <h3>Have a Question?</h3>
+      <p>203 Fake St. Mountain View, San Francisco, USA</p>
+      <p>+2 392 3929 210</p>
+      <p>info@yourdomain.com</p>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    ©2025 All rights reserved | This template is made with ❤ by Clark
+  </div>
+
+</body>
+</html>

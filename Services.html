@@ -1,0 +1,166 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services Section</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #111;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    .services {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .services h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .services p {
+      color: #aaa;
+      max-width: 600px;
+      margin: 0 auto 50px;
+      font-size: 14px;
+    }
+
+    .service-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      padding: 0 50px;
+    }
+
+    .service-box {
+      background-color: #1a1a1a;
+      padding: 40px 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .service-box:hover {
+      background-color: #222;
+      transform: translateY(-5px);
+    }
+
+    .service-box i {
+      font-size: 36px;
+      color: #f39c12;
+      margin-bottom: 20px;
+    }
+
+    .service-box h3 {
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+  </style>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MyLogo</div>
+    <ul>
+       <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="services">
+    <h1>Services</h1>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+
+    <div class="service-boxes">
+      <div class="service-box">
+        <i class="fas fa-laptop-code"></i>
+        <h3>WEB DESIGN</h3>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-camera-retro"></i>
+        <h3>PHOTOGRAPHY</h3>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-code"></i>
+        <h3>WEB DEVELOPER</h3>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>APP DEVELOPING</h3>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-bullhorn"></i>
+        <h3>BRANDING</h3>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-lightbulb"></i>
+        <h3>PRODUCT STRATEGY</h3>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hardhika Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #000;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #f0c419;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+      color: #f8b133;
+      border-bottom: 2px solid #f8b133;
+      padding-bottom: 2px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 60px;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hello {
+      color: #f8b133;
+      font-weight: bold;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .hero-text h1 {
+      font-size: 56px;
+      margin: 10px 0;
+      line-height: 1.2;
+    }
+
+    .hero-text h1 span {
+      color: #f8b133;
+    }
+
+    .hero-text h3 {
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .hire {
+      background-color: #f8b133;
+      color: #000;
+    }
+
+    .works {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    /* Hero Image */
+    .hero-image img {
+      width: 750px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">My Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hello">HELLO!</p>
+      <h1>I'm <span>V.Hardhika</span></h1>
+      <h3>A Freelance Web Designer</h3>
+      <div class="buttons">
+        <a href="#HIRE ME" class="btn hire">HIRE ME</a>
+        <a href="#MY WORKS" class="btn works">MY WORKS</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="img.png" alt="V.Hardhika" height="600px">
+    </div>
+  </section>
+
+</body>
+</html>

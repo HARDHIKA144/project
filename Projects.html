@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #111;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    .projects-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .projects-section h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .projects-section p {
+      color: #aaa;
+      max-width: 600px;
+      margin: 0 auto 50px;
+      font-size: 14px;
+    }
+
+    .projects-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 50px;
+    }
+
+    .projects-gallery img {
+      width: 100%;
+      border-radius: 5px;
+      display: block;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .projects-gallery img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .projects-gallery {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MyLogo</div>
+    <ul>
+         <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="projects-section">
+    <h1>Our Projects</h1>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+
+    <div class="projects-gallery">
+      <img src="https://via.placeholder.com/400x300?text=Project+1" alt="Project 1">
+      <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2">
+      <img src="https://via.placeholder.com/800x300?text=Project+3" alt="Project 3">
+      <img src="https://via.placeholder.com/400x300?text=Project+4" alt="Project 4">
+      <img src="https://via.placeholder.com/400x300?text=Project+5" alt="Project 5">
+      <img src="https://via.placeholder.com/400x300?text=Project+6" alt="Project 6">
+      <img src="https://via.placeholder.com/400x300?text=Project+7" alt="Project 7">
+    </div>
+  </div>
+
+</body>
+</html>

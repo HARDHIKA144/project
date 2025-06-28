@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills Section</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #111;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    .skills-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .skills-section h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .skills-section p {
+      color: #aaa;
+      max-width: 600px;
+      margin: 0 auto 50px;
+      font-size: 14px;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 0 50px;
+    }
+
+    .skill {
+      width: 300px;
+    }
+
+    .skill-label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .skill-bar {
+      background-color: #222;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 8px;
+    }
+
+    .skill-progress {
+      height: 8px;
+      background-color: #f39c12;
+      width: 0;
+      transition: width 1.5s ease;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .skills-container {
+        padding: 0 20px;
+      }
+
+      .skill {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <script>
+    // Animate progress bars after page load
+    window.onload = function() {
+      document.querySelectorAll('.skill-progress').forEach(function(bar) {
+        bar.style.width = bar.getAttribute('data-progress');
+      });
+    }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MyLogo</div>
+    <ul>
+          <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="Skills.html">Skills</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="skills-section">
+    <h1>My Skills</h1>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+
+    <div class="skills-container">
+      <div class="skill">
+        <div class="skill-label">
+          <span>Photoshop</span>
+          <span>90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="90%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label">
+          <span>jQuery</span>
+          <span>85%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="85%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label">
+          <span>HTML5</span>
+          <span>95%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="95%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label">
+          <span>CSS3</span>
+          <span>90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="90%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label">
+          <span>WordPress</span>
+          <span>70%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="70%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-label">
+          <span>SEO</span>
+          <span>80%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="80%"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+header {
+    padding: 20px 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-left: auto;  /* 👈 This ensures the nav links go to the right */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+    color: #fbb034;
+    border-bottom: 2px solid #fbb034;
+    padding-bottom: 5px;
+}

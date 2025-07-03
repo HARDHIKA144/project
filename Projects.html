@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <style>
-    body {
+      body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #000;
@@ -23,7 +23,7 @@
     nav .logo {
       font-size: 24px;
       font-weight: bold;
-      color: #fff;
+      color:#f0c419;
     }
 
     nav ul {
@@ -44,67 +44,96 @@
     nav ul li a:hover {
       color: #f39c12;
     }
-
     .projects-section {
-      padding: 50px 20px;
-      text-align: center;
-    }
+  background: #111;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
 
-    .projects-section h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
+.projects-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
 
-    .projects-section p {
-      color: #aaa;
-      max-width: 600px;
-      margin: 0 auto 50px;
-      font-size: 14px;
-    }
+.projects-section .subtitle {
+  color: #aaa;
+  margin-bottom: 40px;
+}
 
-    .projects-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 0 50px;
-    }
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    .projects-gallery img {
-      width: 100%;
-      border-radius: 5px;
-      display: block;
-      transition: transform 0.3s, opacity 0.3s;
-    }
+.project-card {
+  background: #1a1a1a;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 
-    .projects-gallery img:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
-    }
+.project-card img {
+  width: 100%;
+  display: block;
+}
 
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 15px;
-      }
+.project-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-      }
+.project-content .date {
+  font-size: 0.85em;
+  color: #bbb;
+  margin-bottom: 10px;
+}
 
-      .projects-gallery {
-        padding: 0 20px;
-      }
-    }
+.project-content h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.project-content .description {
+  font-size: 0.95em;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.project-content .links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project-content .links a {
+  background: #2ec4b6;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background 0.3s;
+}
+
+.project-content .links a:hover {
+  background: #279e97;
+}
   </style>
 </head>
 <body>
-
-  <nav>
-    <div class="logo">MyLogo</div>
-    <ul>
-         <li><a href="index.html">Home</a></li>
+  <nav class="navbar">
+    <div class="logo">My Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="About.html">About</a></li>
       <li><a href="Resume.html">Resume</a></li>
       <li><a href="Services.html">Services</a></li>
@@ -113,21 +142,112 @@
       <li><a href="Contact.html">Contact</a></li>
     </ul>
   </nav>
+  <section class="projects-section">
+  <div class="container">
+    <h2>Our Projects</h2>
+    <p class="subtitle">
+      A showcase of our work deployed on GitHub and Netlify
+    </p>
+    <div class="projects-grid">
+      
+      <!-- Card 1 -->
+      <div class="project-card">
+        <img src="p1.png" alt="Project 1">
+        <div class="project-content">
+          <p class="date">June 12, 2025 • Admin</p>
+          <h3>HTML task 1</h3>
+          <p class="description">
+            A basic HTML webpage demonstrating simple text, images, and links layout for beginners.
+          </p>
+          <div class="links">
+            <a href="https://github.com/HARDHIKA144/task1" target="_blank">GitHub</a>
+            <a href="https://hardhi-t1.netlify.app/" target="_blank">Netlify</a>
+          </div>
+        </div>
+      </div>
 
-  <div class="projects-section">
-    <h1>Our Projects</h1>
-    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+      <!-- Card 2 -->
+      <div class="project-card">
+        <img src="p2.png" alt="Project 2">
+        <div class="project-content">
+          <p class="date">June 16, 2025 • Admin</p>
+          <h3>HTML task 2</h3>
+          <p class="description">
+            A structured HTML page with multiple sections and semantic tags to organize content effectively.
+          </p>
+          <div class="links">
+            <a href="https://github.com/HARDHIKA144/task2">GitHub</a>
+            <a href="https://hardhi-t2.netlify.app/">Netlify</a>
+          </div>
+        </div>
+      </div>
 
-    <div class="projects-gallery">
-      <img src="https://via.placeholder.com/400x300?text=Project+1" alt="Project 1">
-      <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2">
-      <img src="https://via.placeholder.com/800x300?text=Project+3" alt="Project 3">
-      <img src="https://via.placeholder.com/400x300?text=Project+4" alt="Project 4">
-      <img src="https://via.placeholder.com/400x300?text=Project+5" alt="Project 5">
-      <img src="https://via.placeholder.com/400x300?text=Project+6" alt="Project 6">
-      <img src="https://via.placeholder.com/400x300?text=Project+7" alt="Project 7">
+      <!-- Card 3 -->
+      <div class="project-card">
+        <img src="p3.png" alt="Project 3">
+        <div class="project-content">
+          <p class="date">June 19, 2025 • Admin</p>
+          <h3>CSS task 3</h3>
+          <p class="description">
+            Using basic CSS for layout design, colors,simple text and images
+          </p>
+          <div class="links">
+            <a href="https://github.com/HARDHIKA144/css-task1">GitHub</a>
+            <a href="https://hardhicss-t1.netlify.app/">Netlify</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="project-card">
+        <img src="p4.png" alt="Project 4">
+        <div class="project-content">
+          <p class="date">June 22, 2025 • Admin</p>
+          <h3>REGISTERATION FORM 4</h3>
+          <p class="description">
+            A simple and responsive registration form built using HTML and CSS to collect user details securely.
+          </p>
+          <div class="links">
+            <a href="https://github.com/HARDHIKA144/regform">GitHub</a>
+            <a href="https://hardhireg-p1.netlify.app/">Netlify</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="project-card">
+        <img src="p5.png" alt="Project 5">
+        <div class="project-content">
+          <p class="date">June 24, 2025 • Admin</p>
+          <h3>CAR WEBSITE 5</h3>
+          <p class="description">
+            A simple and responsive registration form built using HTML and CSS to collect user details securely.
+          </p>
+          <div class="links">
+            <a href="https://github.com/HARDHIKA144/web">GitHub</a>
+            <a href="https://hardhiweb-t1.netlify.app/">Netlify</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="project-card">
+        <img src="p6.png" alt="Project 6">
+        <div class="project-content">
+          <p class="date">June 28, 2025 • Admin</p>
+          <h3>HARDHIKA PROTFOLIO 6</h3>
+          <p class="description">
+        A personal portfolio website showcasing my projects, skills, and contact information using HTML, CSS, and responsive design.
+          </p>
+          <div class="links">
+            <a href="https://github.com/HARDHIKA144/project">GitHub</a>
+            <a href="https://hardhipro.netlify.app/">Netlify</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-
+</section>
 </body>
 </html>

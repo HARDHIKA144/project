@@ -9,48 +9,45 @@
       padding: 0;
       box-sizing: border-box;
     }
-
-    body {
+  body {
+      margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #000;
       color: #fff;
     }
 
-    /* Navbar */
-    .navbar {
+    nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 60px;
-      background-color: #000;
+      padding: 20px 50px;
+      background-color: #111;
     }
 
-    .logo {
-      font-size: 26px;
+    nav .logo {
+      font-size: 24px;
       font-weight: bold;
-      color: #f0c419;
+      color:#f0c419;
     }
 
-    .nav-links {
+    nav ul {
       list-style: none;
       display: flex;
       gap: 30px;
+      margin: 0;
+      padding: 0;
     }
 
-    .nav-links a {
-      text-decoration: none;
+    nav ul li a {
       color: #fff;
+      text-decoration: none;
       font-weight: 500;
-      transition: 0.3s ease;
+      transition: color 0.3s;
     }
 
-    .nav-links a.active,
-    .nav-links a:hover {
-      color: #f8b133;
-      border-bottom: 2px solid #f8b133;
-      padding-bottom: 2px;
+    nav ul li a:hover {
+      color: #f39c12;
     }
-
     /* Hero Section */
     .hero {
       display: flex;
@@ -142,7 +139,7 @@
     <div class="hero-text">
       <p class="hello">HELLO!</p>
       <h1>I'm <span>V.Hardhika</span></h1>
-      <h3>A Freelance Web Designer</h3>
+      <h3>A Freelance software Designer and developer</h3>
       <div class="buttons">
         <a href="#HIRE ME" class="btn hire">HIRE ME</a>
         <a href="#MY WORKS" class="btn works">MY WORKS</a>
